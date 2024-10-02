@@ -6,7 +6,7 @@
 
 using namespace std;
 
-void limpiarPantalla() {
+void INTERFAZ::void limpiarPantalla() {
 #ifdef _WIN32
     system("cls");
 #else
@@ -14,7 +14,7 @@ void limpiarPantalla() {
 #endif
 }
 
-void pausa() {
+void INTERFAZ::void pausa() {
     cout << "Presione una tecla para continuar...";
     cin.get();
     cin.get();
@@ -31,7 +31,7 @@ private:
     string estadoTarea;
 
 public:
-void menuPrincipal() {
+void INTERFAZ::menuPrincipal() {
         int opcion;
         do {
             limpiarPantalla();
@@ -66,7 +66,7 @@ void menuPrincipal() {
         } while (opcion != 4);
     }
 
- void gestionProyectos() {
+void INTERFAZ::gestionProyectos() {
         int opcion;
         do {
             limpiarPantalla();
@@ -95,7 +95,7 @@ void menuPrincipal() {
         } while (opcion != 3);
     }
 
-void crearProyecto() {
+void INTERFAZ::void crearProyecto() {
         limpiarPantalla();
         cout << "CREAR PROYECTO" << endl;
         cout << "Descripción: ";
@@ -114,7 +114,7 @@ void crearProyecto() {
         pausa();
     }
 
-void reunionesSeguimiento() {
+void INTERFAZ::void reunionesSeguimiento() {
         int opcion;
         do {
             limpiarPantalla();
@@ -143,7 +143,7 @@ void reunionesSeguimiento() {
         } while (opcion != 4);
     }
 
-void agendarReunion() {
+void INTERFAZ::void agendarReunion() {
     limpiarPantalla();
     cout << "AGENDAR REUNIÓN" << endl;
     string fechaReunion;
@@ -163,7 +163,7 @@ void agendarReunion() {
     pausa();
 }
 
-void seleccionarTarea() {
+void INTERFAZ::void seleccionarTarea() {
     int opcion;
     do {
         limpiarPantalla();
@@ -192,7 +192,7 @@ void seleccionarTarea() {
     } while (opcion != 4);
 }
 
-void estadoActualTarea() {
+void INTERFAZ::void estadoActualTarea() {
     limpiarPantalla();
     cout << "ESTADO ACTUAL DE LA TAREA" << endl;
     cout << "Tarea: " << tarea << endl;
@@ -202,7 +202,7 @@ void estadoActualTarea() {
     pausa();
 }
 
-void cambiarEstadoTarea() {
+void INTERFAZ::void cambiarEstadoTarea() {
     char opcion;
     limpiarPantalla();
     cout << "CAMBIAR ESTADO DE LA TAREA" << endl;
@@ -235,7 +235,7 @@ void cambiarEstadoTarea() {
     pausa();
 }
 
-void proximaAccion() {
+void INTERFAZ::void proximaAccion() {
     char opcion;
     limpiarPantalla();
     cout << "PRÓXIMA ACCIÓN: RECOMENDACIONES" << endl;
