@@ -5,15 +5,6 @@
 #include <string>
 
 class INTERFAZ {
-private:
-    std::string proyecto;
-    std::string descripcion;
-    std::string fechaInicio;
-    std::string fechaFin;
-    std::string asistentes;
-    std::string tarea;
-    std::string estadoTarea;
-
 public:
     void menuPrincipal();
     void gestionProyectos();
@@ -24,6 +15,15 @@ public:
     void estadoActualTarea();
     void cambiarEstadoTarea();
     void proximaAccion();
+
+private:
+    std::string proyecto;
+    std::string descripcion;
+    std::string fechaInicio;
+    std::string fechaFin;
+    std::string asistentes;
+    std::string tarea;
+    std::string estadoTarea;
 };
 
 void limpiarPantalla();
