@@ -1,0 +1,8 @@
+#include <iostream>
+#include "Interfaz.h"
+
+int main() {
+    INTERFAZ interfaz;
+    interfaz.menuPrincipal();
+    return 0;
+}
