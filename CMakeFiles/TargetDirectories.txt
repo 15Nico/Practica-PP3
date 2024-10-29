@@ -1,0 +1,3 @@
+C:/Users/Nico T/Desktop/ProyectoPP3-main/CMakeFiles/GestorProyectos.dir
+C:/Users/Nico T/Desktop/ProyectoPP3-main/CMakeFiles/edit_cache.dir
+C:/Users/Nico T/Desktop/ProyectoPP3-main/CMakeFiles/rebuild_cache.dir
